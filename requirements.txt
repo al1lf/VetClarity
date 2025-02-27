@@ -1,0 +1,11 @@
+customtkinter
+datetime
+dotenv
+os
+pandas
+paramiko
+PIL
+sqlalchemy
+tkinter
+time
+zipfile

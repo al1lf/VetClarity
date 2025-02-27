@@ -1,0 +1,2 @@
+echo off
+python Vetoquinol_DataExport_checkbox.py
