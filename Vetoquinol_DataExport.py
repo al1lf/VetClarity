@@ -773,7 +773,7 @@ button_sftp = ctk.CTkButton(master=window, textvariable=button_sftp_string, comm
 button_sftp.pack(pady=10, anchor='center')
 
 # Add copyright text at the base of the window
-copyright_label = ctk.CTkLabel(master=window, text="© ALF DATA, February 2025", text_color='white')
+copyright_label = ctk.CTkLabel(master=window, text="© ALF DATA, February 2025, v1.0", text_color='white')
 copyright_label.pack(side='bottom', pady=10, padx=10, anchor='e')
 
 # run

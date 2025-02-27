@@ -841,7 +841,7 @@ button_https = ctk.CTkButton(master=button_frame_2, textvariable=button_https_st
 button_https.pack(side='right', padx=20)
 
 # Add copyright text at the base of the window
-copyright_label = ctk.CTkLabel(master=window, text="© ALF DATA, February 2025", text_color='white')
+copyright_label = ctk.CTkLabel(master=window, text="© ALF DATA, February 2025, v1.0", text_color='white')
 copyright_label.pack(side='bottom', pady=10, padx=10, anchor='e')
 
 # run
