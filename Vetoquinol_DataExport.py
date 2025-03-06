@@ -700,7 +700,7 @@ droplist_frame = ctk.CTkFrame(master=window)
 droplist_frame.pack(pady=5, padx=50, anchor='w')
 droplist_label = ctk.CTkLabel(master=droplist_frame, text="Select a month:", font=('Helvetica', 12, 'bold'))
 droplist_label.pack(side='left', padx=5)
-droplist = ctk.CTkComboBox(master=droplist_frame, variable=droplist_var, values=items, state='readonly')
+droplist = ctk.CTkComboBox(master=droplist_frame, variable=droplist_var, values=items)#, state='readonly')
 droplist.pack(pady=5)
     
 # Selection des fichiers à exporter

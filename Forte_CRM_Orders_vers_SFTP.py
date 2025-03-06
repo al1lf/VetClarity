@@ -3,6 +3,8 @@ from sqlalchemy import create_engine
 import paramiko
 import os
 from dotenv import load_dotenv
+import schedule
+import time
 
 # Charger les variables d'environnement à partir du fichier .env
 load_dotenv()
@@ -56,6 +58,7 @@ def upload_to_sftp(local_file, remote_path, sftp_host, sftp_port, sftp_user, sft
         print(f"Erreur lors du transfert SFTP : {e}")
         
 if __name__ == "__main__":
+# def f_send_to_sftp():
     # Étape 1: Exécuter la requête SQL et créer le fichier texte
     export_file = get_sql_data()
 
@@ -71,3 +74,9 @@ if __name__ == "__main__":
     # Étape 3: Transférer le fichier texte vers le serveur SFTP
     print(f"Transfert du fichier {export_file} vers {remote_path} avec {sftp_user}")
     upload_to_sftp(export_file, remote_path, sftp_host, sftp_port, sftp_user, sftp_password)
+
+# # Schedule it to run every day at 2:30 PM
+# schedule.every().day.at("14:20").do(f_send_to_sftp)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)
