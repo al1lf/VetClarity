@@ -2,6 +2,7 @@ import customtkinter as ctk
 from customtkinter import *
 import time
 from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 from sqlalchemy import create_engine, text
 import pandas as pd
 import zipfile
@@ -30,7 +31,7 @@ def f_generate_dates(end_date):
     
     dates = []
     for i in range(12):  # Inclure la date de fin et les 11 mois précédents / Include end date and previous 11 months
-        date = end_date - timedelta(days=i * 30)  # Approximativement 1 mois / Approximately 1 month
+        date = end_date - relativedelta(months=i)
         formatted_date = date.strftime("01/%m/%Y")
         dates.append(formatted_date)
     
