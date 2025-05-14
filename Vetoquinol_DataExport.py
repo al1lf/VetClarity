@@ -686,7 +686,7 @@ defaut_path = os.getenv('CLIENT_PATH_VTQ')
 work_path = ctk.CTkLabel(directory_frame, text=str(defaut_path), wraplength=400)
 work_path.pack(side='left', padx=5)
 # Bouton pour ouvrir le dialogue de sélection de dossier
-button_folder = ctk.CTkButton(directory_frame, text='Modify', command=f_select_folder, fg_color=color_grey_light, hover_color=color_grey_dark, corner_radius=15, border_color=color_grey_dark, border_width=1, text_color='white', width=100)
+button_folder = ctk.CTkButton(master=window, text='Modify', command=f_select_folder, fg_color=color_grey_light, hover_color=color_grey_dark, corner_radius=15, border_color=color_grey_dark, border_width=1, text_color='white', width=100)
 button_folder.pack(pady=5)
 
 # dropdown list

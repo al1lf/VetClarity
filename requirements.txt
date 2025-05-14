@@ -1,10 +1,10 @@
 customtkinter
 datetime
-dotenv
+python-dotenv
 os
 pandas
 paramiko
-PIL
+pillow
 sqlalchemy
 tkinter
 time

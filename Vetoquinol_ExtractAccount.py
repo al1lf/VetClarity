@@ -60,7 +60,7 @@ def update_table_with_sftp_file(host, port, username, password, remote_file_path
         df_extract_accounts['Account No.'] = df_extract_accounts['Account No.'].astype("string")
         df_extract_accounts['date'] = datetime.now()
         df_extract_accounts['file'] = os.path.basename(remote_file_path)
-        
+        print(df_extract_accounts.head())
         # Paramètres de connexion à la base de données
         database = os.getenv('SQL_DB_VTQ')
         server = os.getenv('SQL_SERVER')

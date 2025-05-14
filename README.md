@@ -13,10 +13,10 @@ L'application permet de sélectionner les données à exporter et éventuellemen
   - `pandas`
   - `zipfile`
   - `os`
-  - `dotenv`
+  - `python-dotenv`
   - `paramiko`
   - `tkinter`
-  - `PIL`
+  - `pillow`
 
 ## Installation
 
@@ -83,10 +83,10 @@ The application allows selecting the data to export and optionally sending them 
   - `pandas`
   - `zipfile`
   - `os`
-  - `dotenv`
+  - `python-dotenv`
   - `paramiko`
   - `tkinter`
-  - `PIL`
+  - `pillow`
 
 ## Installation
 
